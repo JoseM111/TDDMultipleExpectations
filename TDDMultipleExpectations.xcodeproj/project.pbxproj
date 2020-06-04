@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EEA704F276C99BD2069DD30 /* MyTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA7164D2D0D9C45C613591 /* MyTools.swift */; };
+		9EEA722A4F89C03B9D32B97B /* AlertMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA7834CE91D34648BE63FD /* AlertMgr.swift */; };
+		9EEA75CB958E23E5942607D8 /* MyTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA7164D2D0D9C45C613591 /* MyTools.swift */; };
+		9EEA75D57A6FBD6F3C35413C /* AlertMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA7834CE91D34648BE63FD /* AlertMgr.swift */; };
+		9EEA7705037963CE16AEBE7D /* Extention+NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA75CCCD212FC1EECD0899 /* Extention+NotificationName.swift */; };
+		9EEA7A1771B24FF1E54836C7 /* Extention+NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA75CCCD212FC1EECD0899 /* Extention+NotificationName.swift */; };
 		AB9DB6CE2489836B00F6F77A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9DB6CD2489836B00F6F77A /* main.swift */; };
+		AB9DB6DB248983AD00F6F77A /* TDDMultipleExpectationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9DB6DA248983AD00F6F77A /* TDDMultipleExpectationsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9EEA7164D2D0D9C45C613591 /* MyTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTools.swift; sourceTree = "<group>"; };
+		9EEA75CCCD212FC1EECD0899 /* Extention+NotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extention+NotificationName.swift"; sourceTree = "<group>"; };
+		9EEA7834CE91D34648BE63FD /* AlertMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMgr.swift; sourceTree = "<group>"; };
 		AB9DB6CA2489836B00F6F77A /* TDDMultipleExpectations */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TDDMultipleExpectations; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9DB6CD2489836B00F6F77A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AB9DB6D8248983AD00F6F77A /* TDDMultipleExpectationsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDMultipleExpectationsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9DB6DA248983AD00F6F77A /* TDDMultipleExpectationsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDMultipleExpectationsTest.swift; sourceTree = "<group>"; };
+		AB9DB6DC248983AD00F6F77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,13 +48,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB9DB6D5248983AD00F6F77A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EEA7C3030AF2465CE142C57 /* MyTools */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA7164D2D0D9C45C613591 /* MyTools.swift */,
+			);
+			path = MyTools;
+			sourceTree = "<group>";
+		};
 		AB9DB6C12489836B00F6F77A = {
 			isa = PBXGroup;
 			children = (
 				AB9DB6CC2489836B00F6F77A /* TDDMultipleExpectations */,
+				AB9DB6D9248983AD00F6F77A /* TDDMultipleExpectationsTest */,
 				AB9DB6CB2489836B00F6F77A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				AB9DB6CA2489836B00F6F77A /* TDDMultipleExpectations */,
+				AB9DB6D8248983AD00F6F77A /* TDDMultipleExpectationsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +88,20 @@
 			isa = PBXGroup;
 			children = (
 				AB9DB6CD2489836B00F6F77A /* main.swift */,
+				9EEA7C3030AF2465CE142C57 /* MyTools */,
+				9EEA7834CE91D34648BE63FD /* AlertMgr.swift */,
+				9EEA75CCCD212FC1EECD0899 /* Extention+NotificationName.swift */,
 			);
 			path = TDDMultipleExpectations;
+			sourceTree = "<group>";
+		};
+		AB9DB6D9248983AD00F6F77A /* TDDMultipleExpectationsTest */ = {
+			isa = PBXGroup;
+			children = (
+				AB9DB6DA248983AD00F6F77A /* TDDMultipleExpectationsTest.swift */,
+				AB9DB6DC248983AD00F6F77A /* Info.plist */,
+			);
+			path = TDDMultipleExpectationsTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +124,23 @@
 			productReference = AB9DB6CA2489836B00F6F77A /* TDDMultipleExpectations */;
 			productType = "com.apple.product-type.tool";
 		};
+		AB9DB6D7248983AD00F6F77A /* TDDMultipleExpectationsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9DB6DD248983AD00F6F77A /* Build configuration list for PBXNativeTarget "TDDMultipleExpectationsTest" */;
+			buildPhases = (
+				AB9DB6D4248983AD00F6F77A /* Sources */,
+				AB9DB6D5248983AD00F6F77A /* Frameworks */,
+				AB9DB6D6248983AD00F6F77A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDDMultipleExpectationsTest;
+			productName = TDDMultipleExpectationsTest;
+			productReference = AB9DB6D8248983AD00F6F77A /* TDDMultipleExpectationsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +152,9 @@
 				ORGANIZATIONNAME = "Jose Martinez";
 				TargetAttributes = {
 					AB9DB6C92489836B00F6F77A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					AB9DB6D7248983AD00F6F77A = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -111,9 +173,20 @@
 			projectRoot = "";
 			targets = (
 				AB9DB6C92489836B00F6F77A /* TDDMultipleExpectations */,
+				AB9DB6D7248983AD00F6F77A /* TDDMultipleExpectationsTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB9DB6D6248983AD00F6F77A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB9DB6C62489836B00F6F77A /* Sources */ = {
@@ -121,6 +194,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB9DB6CE2489836B00F6F77A /* main.swift in Sources */,
+				9EEA75CB958E23E5942607D8 /* MyTools.swift in Sources */,
+				9EEA722A4F89C03B9D32B97B /* AlertMgr.swift in Sources */,
+				9EEA7705037963CE16AEBE7D /* Extention+NotificationName.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB9DB6D4248983AD00F6F77A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB9DB6DB248983AD00F6F77A /* TDDMultipleExpectationsTest.swift in Sources */,
+				9EEA704F276C99BD2069DD30 /* MyTools.swift in Sources */,
+				9EEA75D57A6FBD6F3C35413C /* AlertMgr.swift in Sources */,
+				9EEA7A1771B24FF1E54836C7 /* Extention+NotificationName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +349,42 @@
 			};
 			name = Release;
 		};
+		AB9DB6DE248983AD00F6F77A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8R94WS9HFC;
+				INFOPLIST_FILE = TDDMultipleExpectationsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.jose.TDDMultipleExpectationsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB9DB6DF248983AD00F6F77A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8R94WS9HFC;
+				INFOPLIST_FILE = TDDMultipleExpectationsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.jose.TDDMultipleExpectationsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +402,15 @@
 			buildConfigurations = (
 				AB9DB6D22489836B00F6F77A /* Debug */,
 				AB9DB6D32489836B00F6F77A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB9DB6DD248983AD00F6F77A /* Build configuration list for PBXNativeTarget "TDDMultipleExpectationsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB9DB6DE248983AD00F6F77A /* Debug */,
+				AB9DB6DF248983AD00F6F77A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
